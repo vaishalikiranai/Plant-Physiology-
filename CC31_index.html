@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="M.Sc. Botany Semester III course overview, 12-week work plan, calendar, practicals, materials and language support for CC31 Plant Physiology and Biochemistry.">
+  <title>CC31 | Plant Physiology and Biochemistry</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172b3a;
+      --muted: #465a68;
+      --brand: #174a3a;
+      --brand-dark: #10382c;
+      --accent: #e4f1e9;
+      --line: #c9d6d0;
+      --paper: #ffffff;
+      --page: #f3f7f4;
+      --focus: #a34c00;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font: 1rem/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    a { color: #064f86; text-decoration-thickness: .1em; text-underline-offset: .18em; }
+    a:hover { color: #06375c; }
+    a:focus-visible, summary:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+      border-radius: 3px;
+    }
+    .skip-link {
+      position: absolute; left: -9999px; top: .5rem; z-index: 10;
+      background: white; padding: .75rem 1rem; border: 2px solid var(--focus);
+    }
+    .skip-link:focus { left: .5rem; }
+    header {
+      background: var(--brand-dark); color: #fff; padding: 2.5rem 1rem 2rem;
+      border-bottom: 5px solid #b7d7c3;
+    }
+    .wrap { max-width: 1120px; width: calc(100% - 2rem); margin: 0 auto; }
+    .eyebrow { margin: 0 0 .5rem; text-transform: uppercase; letter-spacing: .1em; font-size: .82rem; font-weight: 700; }
+    h1 { margin: 0; line-height: 1.15; font-size: clamp(2rem, 4vw, 3.2rem); }
+    .subtitle { max-width: 780px; margin: .8rem 0 0; color: #f0f7f2; font-size: 1.1rem; }
+    nav { background: #fff; border-bottom: 1px solid var(--line); }
+    nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: .35rem 1rem; margin: 0; padding: .85rem 0; }
+    nav a { font-weight: 650; }
+    main { padding: 1.5rem 0 3rem; }
+    section, .panel {
+      background: var(--paper); border: 1px solid var(--line); border-radius: .7rem;
+      padding: clamp(1rem, 2.5vw, 1.6rem); margin: 0 0 1.2rem;
+    }
+    h2 { color: var(--brand-dark); margin: 0 0 .8rem; font-size: clamp(1.4rem, 2.5vw, 1.9rem); line-height: 1.25; }
+    h3 { margin: 1rem 0 .4rem; color: var(--brand); font-size: 1.12rem; }
+    p { margin: .45rem 0 .8rem; }
+    .note { background: var(--accent); border-left: 4px solid var(--brand); padding: .8rem 1rem; border-radius: .25rem; }
+    .muted { color: var(--muted); }
+    .meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: .7rem; margin-top: 1rem; }
+    .meta div { background: #f6faf7; border: 1px solid var(--line); border-radius: .45rem; padding: .8rem; }
+    .meta strong { display: block; color: var(--brand-dark); }
+    ul, ol { padding-left: 1.35rem; }
+    li { margin: .25rem 0; }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: .45rem; }
+    table { width: 100%; border-collapse: collapse; min-width: 760px; }
+    caption { text-align: left; padding: .7rem; font-weight: 700; color: var(--brand-dark); background: #f0f6f2; }
+    th, td { padding: .75rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+    th { background: var(--brand-dark); color: #fff; font-size: .92rem; }
+    tbody tr:nth-child(even) { background: #f7faf8; }
+    tbody tr:last-child td { border-bottom: 0; }
+    .tag { display: inline-block; padding: .1rem .5rem; border: 1px solid #8db4a0; border-radius: 999px; font-size: .8rem; font-weight: 700; color: var(--brand-dark); }
+    details { border: 1px solid var(--line); border-radius: .45rem; margin: .6rem 0; padding: .65rem .85rem; }
+    summary { font-weight: 700; cursor: pointer; color: var(--brand-dark); }
+    .prompt { white-space: pre-wrap; overflow-wrap: anywhere; background: #f3f5f6; border: 1px solid #d3dadd; padding: 1rem; border-radius: .45rem; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: .92rem; }
+    footer { background: #e7efea; border-top: 1px solid var(--line); padding: 1.2rem 0; color: var(--muted); }
+    @media (max-width: 650px) {
+      nav ul { display: block; }
+      nav li { margin: .4rem 0; }
+      header { padding-top: 1.8rem; }
+      section { padding: 1rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media print {
+      body { background: #fff; font-size: 10pt; }
+      header { background: #fff; color: #000; border-bottom: 2px solid #000; padding: 1rem 0; }
+      .subtitle, .eyebrow { color: #000; }
+      nav { display: none; }
+      section, .panel { break-inside: avoid; box-shadow: none; border-color: #888; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header>
+    <div class="wrap">
+      <p class="eyebrow">M.Sc. Botany · Semester III · Academic session 2026</p>
+      <h1>Plant Physiology and Biochemistry</h1>
+      <p class="subtitle">CC31 Core Course · Rajmata Scindia Government Girls College, Chhindwara, Madhya Pradesh</p>
+      <div class="meta" aria-label="Course facts">
+        <div><strong>Course code</strong>CC31</div>
+        <div><strong>Credits</strong>6 credits</div>
+        <div><strong>Theory scope</strong>6 units · 15 lectures per unit</div>
+        <div><strong>Assessment stated in syllabus</strong>40 marks CCE + 60 marks university examination</div>
+      </div>
+    </div>
+  </header>
+
+  <nav aria-label="Page navigation">
+    <div class="wrap">
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#outcomes">Outcomes</a></li>
+        <li><a href="#weekly-plan">12-week plan</a></li>
+        <li><a href="#calendar">Dated calendar</a></li>
+        <li><a href="#materials">Materials</a></li>
+        <li><a href="#practice">Practice task</a></li>
+        <li><a href="#language-support">Language support</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content" class="wrap">
+    <section id="overview">
+      <h2>Course overview</h2>
+      <p>The course develops understanding of plant processes at molecular and cellular levels, including major metabolic pathways, photosynthesis, respiration and plant responses to environmental stresses. It also emphasises experimental techniques, data analysis and application of plant-science knowledge to agriculture, conservation and biotechnology.</p>
+      <div class="note">
+        <strong>Planning note:</strong> The supplied syllabus allocates 15 lectures to each of six units (90 lectures in total). This page adapts the supplied 15-week work plan into a proposed 12-week teaching sequence as requested. The source does not provide exact semester dates, so calendar dates are marked “To be added”. Confirm weekly contact hours, practical slots and assessment dates with the approved college timetable.
+      </div>
+      <h3>Course units</h3>
+      <ol>
+        <li><strong>Unit I — Introduction and Plant Water Relation:</strong> history and Indian scientists; water potential; water and solute transport; root absorption; xylem transport; transpiration; stomata; guttation; photoassimilate translocation.</li>
+        <li><strong>Unit II — Photosynthesis:</strong> photosynthetic apparatus, pigments and photosystems; water photo-oxidation; electron/proton transport; Calvin cycle; photorespiration; C4 and CAM pathways; factors affecting photosynthesis; artificial photosynthesis.</li>
+        <li><strong>Unit III — Respiration and Lipid Metabolism:</strong> glycolysis, PPP, TCA cycle, mitochondrial electron transport, ATP synthesis, glyoxylate cycle, lipid structure and function, fatty-acid biosynthesis and oxidation.</li>
+        <li><strong>Unit IV — Nitrogen Metabolism and Secondary Metabolites:</strong> nitrogen uptake and fixation, nodulation, ammonium assimilation, amino-acid biosynthesis; terpenes, phenols and nitrogenous compounds.</li>
+        <li><strong>Unit V — Plant Hormone and Sensory Photobiology:</strong> major plant hormones, their synthesis, transport, effects and mechanisms; phytochromes, cryptochromes, phototropins, photoperiodism and biological clocks.</li>
+        <li><strong>Unit VI — Seed Science and Stress Physiology:</strong> seed development, reserves, germination and dormancy; biotic and abiotic stress; drought, salinity, freezing, heat and oxidative stress.</li>
+      </ol>
+    </section>
+
+    <section id="outcomes">
+      <h2>Supplied course learning outcome and working outcomes</h2>
+      <p><strong>Course learning outcome described in the supplied syllabus:</strong> Students will gain a comprehensive understanding of plant processes at molecular and cellular levels; learn key metabolic pathways, including photosynthesis and respiration; understand plant responses to environmental stresses; develop practical skills in experimental techniques and data analysis; and apply this knowledge to challenges in agriculture, conservation and biotechnology.</p>
+      <p class="muted">The numbered COs below are the proposed measurable outcomes included in the supplied Course Information Sheet. The source does not show these as university-approved numbered outcomes; confirm them with the department before formal reporting.</p>
+      <ol>
+        <li><strong>CO1 — Unit I:</strong> Explain and analyse plant water relations, water potential, membrane transport, xylem transport, transpiration, stomatal regulation, guttation and photoassimilate translocation.</li>
+        <li><strong>CO2 — Unit II:</strong> Explain and compare photosynthetic pigments, photosystems, electron/proton transport, carbon-assimilation pathways, photorespiration, C4 and CAM pathways, and factors affecting photosynthesis.</li>
+        <li><strong>CO3 — Unit III:</strong> Analyse major respiratory pathways and energy conversion, including glycolysis, PPP, TCA cycle, mitochondrial electron transport, ATP synthesis and the glyoxylate cycle; explain lipid structure, synthesis and oxidation.</li>
+        <li><strong>CO4 — Unit IV:</strong> Explain nitrogen uptake, fixation, nodulation, ammonium assimilation and amino-acid biosynthesis, and classify plant secondary metabolites by major groups, synthesis and biological roles.</li>
+        <li><strong>CO5 — Unit V:</strong> Compare the biosynthesis, transport, breakdown, physiological effects and mechanisms of action of major plant hormones, and explain photoreceptor function, photoperiodism and biological clocks.</li>
+        <li><strong>CO6 — Unit VI:</strong> Evaluate seed development, reserve mobilisation, germination and dormancy processes, and analyse plant responses and resistance mechanisms under biotic and abiotic stresses.</li>
+        <li><strong>CO7 — Practical work:</strong> Plan or carry out suitable plant-physiology investigations, including seed-germination experiments, using appropriate variables, controls, observations, safety and reproducible recording.</li>
+        <li><strong>CO8 — Across units:</strong> Interpret and communicate plant-physiology evidence using labelled diagrams, charts, data tables and evidence-based explanations, including the contributions of Indian plant scientists and applications in agriculture, conservation or biotechnology.</li>
+      </ol>
+    </section>
+
+    <section id="weekly-plan">
+      <h2>Reviewed 12-week work plan</h2>
+      <p class="muted">The original 15-week sequence has been compressed into 12 weeks by combining related topics and learning activities. This is a proposed teaching plan, not a change to the syllabus’ stated 15 lectures per unit. Adjust the weekly workload to the college’s approved contact hours.</p>
+      <div class="table-wrap">
+        <table>
+          <caption>12-week semester teaching sequence</caption>
+          <thead><tr><th scope="col">Week</th><th scope="col">Theory focus</th><th scope="col">Learning activity</th><th scope="col">Practical / evidence</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Unit I: history of plant physiology; Indian scientists; water potential and its components.</td><td>Scientist-profile role play; water-potential concept map.</td><td>Diagnostic quiz; practical orientation and observation-record format.</td></tr>
+            <tr><td>2</td><td>Unit I: membrane transport, root absorption, xylem transport, transpiration, stomata, guttation and photoassimilate translocation.</td><td>Labelled diagrams and peer explanation.</td><td>Practical 13: transpiration using Ganong’s photometer, subject to availability; short quiz.</td></tr>
+            <tr><td>3</td><td>Unit II: photosynthetic apparatus, pigments, photosystems, water photo-oxidation, electron/proton transport and Calvin cycle.</td><td>Photosystem diagram; group discussion on history of photosynthesis.</td><td>Practical 17: effect of light intensity on photosynthesis; diagram check.</td></tr>
+            <tr><td>4</td><td>Unit II: photorespiration, C4 and CAM pathways, factors affecting photosynthesis and artificial photosynthesis.</td><td>Compare C3/C4/CAM features using the syllabus and course references.</td><td>Practical 18: chlorophyll pigment separation by paper chromatography; pathway worksheet.</td></tr>
+            <tr><td>5</td><td>Unit III: glycolysis, oxidative PPP, TCA cycle, mitochondrial electron transport, ATP synthesis and glyoxylate cycle.</td><td>Prepare a TCA/PPP/glyoxylate pathway chart.</td><td>Practical 14: respiration in germinating seeds/young buds using Ganong’s respirometer; chart feedback.</td></tr>
+            <tr><td>6</td><td>Unit III: ATP, FADH₂ and NADH; lipid structure/function, membrane and storage lipids, fatty-acid biosynthesis and oxidation.</td><td>Connect energy pathways to lipid metabolism.</td><td>Protein practicals 7–10 as lab resources permit; Unit III quiz.</td></tr>
+            <tr><td>7</td><td>Unit IV: nitrogen uptake, fixation, nodule formation, ammonium assimilation and amino-acid biosynthesis.</td><td>Draw a nitrogen-to-amino-acid flow diagram.</td><td>Enzyme practicals 1–4, distributed across available laboratory sessions.</td></tr>
+            <tr><td>8</td><td>Unit IV: terpenes, phenols and nitrogenous secondary metabolites—their synthesis and roles.</td><td>Group discussion and classification chart.</td><td>Practical 9: Lowry/Bradford protein standard curve, if not completed earlier; short assessment.</td></tr>
+            <tr><td>9</td><td>Unit V: auxins, gibberellins, cytokinins, ethylene, ABA, brassinosteroids, polyamines, jasmonic acid and salicylic acid.</td><td>Hormone chart: synthesis, transport, effects and mechanisms.</td><td>Practical 5: native PAGE isoenzyme separation, only if facilities and supervision are available.</td></tr>
+            <tr><td>10</td><td>Unit V: phytochromes, cryptochromes, phototropins, photoperiodism and biological clocks.</td><td>Photoreceptor diagrams; hormone-chart peer review.</td><td>Practical 6 or 11 only with suitable equipment, trained supervision and required institutional authorisation; otherwise use an approved demonstration or data activity.</td></tr>
+            <tr><td>11</td><td>Unit VI: seed development, storage reserves, germination, germination factors, metabolism and dormancy.</td><td>Design a controlled seed-germination investigation.</td><td>Practicals 15–16: incipient plasmolysis and Schardakov’s DPD method, as resources permit.</td></tr>
+            <tr><td>12</td><td>Unit VI: biotic/abiotic stress, drought, salinity, freezing, heat and oxidative stress; course consolidation.</td><td>Stress-response case analysis; student poster or short presentation.</td><td>Practical record/viva; review practical data and complete chromatography or instrumentation work not yet covered.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note"><strong>Practical coverage note:</strong> The supplied PC31 syllabus lists 18 practical exercises. The 12-week grouping above highlights practicals aligned with each topic, but does not imply all 18 can be completed in one session per week. Use the detailed PC31 practical list and schedule additional laboratory periods as required. Practical 6 (chloroplast phosphoproteins/SDS-PAGE/autoradiography) and Practical 11 (radioisotope methodology/instrumentation) require appropriate facilities, supervision and authorisation.</p>
+    </section>
+
+    <section id="calendar">
+      <h2>Dated semester calendar</h2>
+      <p>The semester start date, teaching days, holidays, examination dates and laboratory timetable were not supplied. Add approved dates before publishing this calendar to students.</p>
+      <div class="table-wrap">
+        <table>
+          <caption>Calendar dates — placeholders pending the approved college calendar</caption>
+          <thead><tr><th scope="col">Week</th><th scope="col">Date range</th><th scope="col">Milestone</th><th scope="col">Status</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>To be added</td><td>Unit I introduction; diagnostic check</td><td><span class="tag">To be added</span></td></tr>
+            <tr><td>2</td><td>To be added</td><td>Unit I completion and water-relations practical</td><td><span class="tag">To be added</span></td></tr>
+            <tr><td>3</td><td>To be added</td><td>Unit II foundations and photosynthesis practical</td><td><span class="tag">To be added</span></td></tr>
+            <tr><td>4</td><td>To be added</td><td>Unit II pathways and pigment chromatography</td><td><span class="tag">To be added</span></td></tr>
+            <tr><td>5</td><td>To be added</td><td>Unit III respiration pathways</td><td><span class="tag">To be added</span></td></tr>
+            <tr><td>6</td><td>To be added</td><td>Unit III lipid metabolism and practical records</td><td><span class="tag">To be added</span></td></tr>
+            <tr><td>7</td><td>To be added</td><td>Unit IV nitrogen metabolism</td><td><span class="tag">To be added</span></td></tr>
+            <tr><td>8</td><td>To be added</td><td>Unit IV secondary metabolites</td><td><span class="tag">To be added</span></td></tr>
+            <tr><td>9</td><td>To be added</td><td>Unit V plant hormones</td><td><span class="tag">To be added</span></td></tr>
+            <tr><td>10</td><td>To be added</td><td>Unit V sensory photobiology</td><td><span class="tag">To be added</span></td></tr>
+            <tr><td>11</td><td>To be added</td><td>Unit VI seed science and dormancy</td><td><span class="tag">To be added</span></td></tr>
+            <tr><td>12</td><td>To be added</td><td>Unit VI stress physiology; consolidation and practical review</td><td><span class="tag">To be added</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Assessment structure stated in the supplied syllabus:</strong> CCE/internal assessment — 40 marks; university/end-term theory examination — 60 marks. Specific assessment dates and the detailed internal-mark distribution: <strong>To be added</strong>.</p>
+    </section>
+
+    <section id="materials">
+      <h2>Learning materials</h2>
+      <p>References and platforms below are transcribed from the supplied course syllabus. Availability and current access have not been independently checked.</p>
+      <h3>Reference books listed in the syllabus</h3>
+      <ol>
+        <li>Narayana, P.S. and Pullaiah, T. (2010). <em>Eminent Indian Botanists: Past and Present (Biographies and Contributions)</em>. Regency Publication, Delhi.</li>
+        <li>Moore, T.C. (1989). <em>Biochemistry and Physiology of Plant Hormones</em>, 2nd ed. Springer-Verlag, New York.</li>
+        <li>Heldt, H.W. and Piechulla, B. (2011). <em>Plant Biochemistry</em>, 4th ed. Academic Press, London.</li>
+        <li>Buchanan, B.B., Gruissem, W. and Jones, R. (2015). <em>Biochemistry and Molecular Biology of Plants</em>, 2nd ed. John Wiley and Sons, USA.</li>
+        <li>Shevela, D., Björn, L.O. and Govindjee (2019). <em>Photosynthesis: Solar Energy for Life</em>. World Scientific Publishing Co. Pte. Ltd., Singapore.</li>
+        <li>Pessarakli, M. (2024). <em>Handbook of Photosynthesis</em>, 4th ed. CRC Press, Taylor and Francis Group, LLC.</li>
+        <li>Lodish, H. et al. (2021). <em>Molecular Cell Biology</em>, 9th ed. W.H. Freeman and Company, New York, USA.</li>
+        <li>Nobel, P.S. (1999). <em>Physicochemical and Environmental Plant Physiology</em>, 2nd ed. Academic Press, San Diego, USA.</li>
+        <li>Salisbury, F.B. and Ross, C.W. (1991). <em>Plant Physiology</em>, 4th ed. Wadsworth Publishing Co., California, USA.</li>
+        <li>Taiz, L., Zeiger, E., Møller, I.M. and Murphy, A. (2018). <em>Plant Physiology and Development</em>, 6th ed. Sinauer Associates, Oxford University Press, NY.</li>
+        <li>Baskin, C.C. and Baskin, J.M. (2014). <em>Seeds: Ecology, Biogeography, and Evolution of Dormancy and Germination</em>, 2nd ed. Elsevier Inc.</li>
+        <li>Bradford, K.J. and Nonogaki, H. (2007). <em>Seed Development, Dormancy and Germination</em>. Blackwell Publishing Ltd.</li>
+        <li>Dennis, D.T., Turpin, D.H., Lefebvre, D.D. and Layzell, D.B. (1997). <em>Plant Metabolism</em>, 2nd ed. Longman England.</li>
+      </ol>
+      <h3>Digital platforms and equivalent online course listed in the syllabus</h3>
+      <ul>
+        <li><a href="https://archive.org/" target="_blank" rel="noopener noreferrer">Internet Archive</a> — the syllabus includes a longer item-specific archive.org link; exact item link: <strong>To be added</strong>.</li>
+        <li><a href="https://www.mooec.org" target="_blank" rel="noopener noreferrer">MOOC platform URL as printed in the source: mooec.org</a></li>
+        <li><a href="https://ayavam.gov.in" target="_blank" rel="noopener noreferrer">ayavam.gov.in</a></li>
+        <li><a href="https://nptel.ac.in" target="_blank" rel="noopener noreferrer">NPTEL</a></li>
+        <li><a href="https://geemoocs.inflibnet.ac.in/index.php/courses/view/330" target="_blank" rel="noopener noreferrer">Equivalent online course link printed in the Hindi syllabus section</a></li>
+        <li>Additional course website, lecture slides, laboratory manuals and handouts: <strong>To be added</strong>.</li>
+      </ul>
+    </section>
+
+    <section id="practice">
+      <h2>Practice task: plan a seed-germination investigation</h2>
+      <p>This task is aligned with the Unit VI activity specified in the syllabus: an experimental study of factors affecting seed germination.</p>
+      <h3>Task</h3>
+      <p>Prepare a one-page experimental plan to investigate how <strong>one selected factor</strong> affects seed germination. State the research question, hypothesis, independent variable, dependent variable, control conditions, number of replicates, observation schedule, data table layout and safety considerations.</p>
+      <h3>Submission checklist</h3>
+      <ul>
+        <li>Research question and testable hypothesis.</li>
+        <li>Clear identification of variables and a suitable control.</li>
+        <li>Consistent observation schedule and replicate plan.</li>
+        <li>Blank table for recording germinated seeds and total seeds observed.</li>
+        <li>Short note explaining how results will be compared and communicated.</li>
+      </ul>
+      <p><strong>Assessment rubric and submission date:</strong> To be added.</p>
+    </section>
+
+    <section id="language-support">
+      <h2>Language support</h2>
+      <p>Use this section to support students in reading scientific terminology, explaining processes and preparing laboratory records. Course-specific bilingual glossary and approved language policy: <strong>To be added</strong>.</p>
+      <h3>Study and writing supports</h3>
+      <ul>
+        <li>Keep a glossary with the scientific term, a short definition and a student-written explanation in their preferred study language.</li>
+        <li>For each pathway, practise a three-step explanation: starting material, key process and outcome.</li>
+        <li>Use labelled diagrams before writing a full paragraph about water transport, photosynthesis, respiration or hormone action.</li>
+        <li>For practical records, separate aim, principle, materials, method, observations, result and limitations.</li>
+        <li>When discussing data, describe what was observed before suggesting an explanation; distinguish observation from inference.</li>
+      </ul>
+      <h3>Sentence frames for scientific explanations</h3>
+      <ul>
+        <li>“The purpose of this experiment is to investigate …”</li>
+        <li>“The independent variable is …, while the dependent variable is …”</li>
+        <li>“The results show …; one possible explanation is …”</li>
+        <li>“A limitation of this observation is …”</li>
+        <li>“The evidence supports / does not support the hypothesis because …”</li>
+      </ul>
+    </section>
+
+    <section id="ai-prompts">
+      <h2>AI prompt used for course-site maintenance</h2>
+      <p class="muted">This prompt describes how to update this page while keeping source facts distinct from proposed planning decisions.</p>
+      <div class="prompt">Use the supplied CC31 Plant Physiology and Biochemistry syllabus, the course information sheet and the reviewed semester work plan as the only content sources. Maintain a single semantic index.html file with embedded CSS, UTF-8 and a mobile viewport. Keep the course overview, supplied course learning outcome, clearly labelled proposed COs, 12-week reviewed plan, dated calendar, source-listed materials, one seed-germination practice task and language-support section. Use only URLs present in the supplied materials. Mark missing semester dates, assessment dates, official approval details, practical schedules and course-specific language resources as “To be added”. Do not invent dates, URLs, institutional policies or approved outcomes. Preserve the syllabus’ six-unit scope and its stated 15 lectures per unit; explain that the 12-week calendar is a proposed compression of the teaching sequence, not an alteration of the official syllabus.</div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p><strong>CC31 — Plant Physiology and Biochemistry</strong> · M.Sc. Botany, Semester III · Rajmata Scindia Government Girls College, Chhindwara, Madhya Pradesh</p>
+      <p class="muted">Planning draft based on supplied course materials. Official semester dates, approval status of proposed outcomes, and any missing local details: To be added.</p>
+    </div>
+  </footer>
+</body>
+</html>
